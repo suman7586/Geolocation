@@ -4,7 +4,7 @@
  * and open the template in the editor.
  * Use phonegap feature i.e access GPS of a device
  */
-function init() {
+
    // Wait for device API libraries to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -37,7 +37,7 @@ function init() {
               'message: ' + error.message + '\n');
     }  
 
-}
+
 
 
 
