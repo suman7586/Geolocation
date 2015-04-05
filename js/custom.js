@@ -13,7 +13,8 @@ function init() {
         // just to show how to access latitute and longitude
         latitude=position.coords.latitude;
         longitude=position.coords.longitude;
-       
+        var element = document.getElementById('geolocation');
+        element.innerHTML = 'Latitude: '+ position.coords.latitude+'<br />' +'Longitude: '+ position.coords.longitude+ '<br />';
     },
             function (error)
             {
@@ -22,8 +23,7 @@ function init() {
             },
             {enableHighAccuracy: true, maximumAge: 3000, timeout: 5000});
             
-             var element = document.getElementById('geolocation');
-             element.innerHTML = 'Latitude: '+ position.coords.latitude+'<br />' +'Longitude: '+ position.coords.longitude+ '<br />'
+            
 
 }
 
