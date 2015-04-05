@@ -18,6 +18,7 @@ function init() {
     // onSuccess Geolocation
     //
     function onSuccess(position) {
+	    console.log("I am here");
         var element = document.getElementById('geolocation');
         element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
                             'Longitude: '          + position.coords.longitude             + '<br />' +
