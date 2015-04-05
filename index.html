@@ -9,10 +9,20 @@ and open the template in the editor.
         <title>Geolocation</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <p id="geolocation">Finding geolocation...</p>
+		<style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGIUc9alBsv68oWXvjig7TM9xXD1Cl-k8&amp;v=3&sensor=true&libraries=places&geometry"></script>
         <script src="js/phonegap.js"></script>
         <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <!--<p id="geolocation">Finding geolocation...</p>-->
+		
+		<div id="map-canvas"></div>
     </body>
 </html>
